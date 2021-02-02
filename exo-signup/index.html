@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <title>Créer votre compte</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
     <link href="style.css" rel="stylesheet" />
-  </head>
+</head>
 
-  <body class="formPage">
+<body class="formPage">
     <main>
-      <a href="consignes.html">consignes</a>
-      <h1>Nouveau compte</h1>
-      <form>
-        <div class="input-group">
-          <label for="username">Nom d'utilisateur</label>
-          <input id="username" name="username" />
+        <a href="consignes.html">consignes</a>
+        <h1>Nouveau compte</h1>
+        <form>
+            <div class="input-group">
+                <label for="username">Nom d'utilisateur</label>
+                <input id="username" name="username" />
+            </div>
+            <div class="input-group">
+                <label for="password">Mot de passe</label>
+                <input id="password" name="password" type="password" />
+            </div>
+            <div class="input-group">
+                <label for="comfirm-password">Confirmation du mot de passe</label>
+                <input id="comfirm-password" name="password" type="password" />
+            </div>
+            <button type="submit">Créer mon compte</button>
+        </form>
+
+        <p><b>Cliquez sur le bouton pour changer la couleur du background.</b></p>
+        <div class="btn">
+            <button onclick="changeColor('blue');">Bleu</button>
+            <button onclick="changeColor('green');">Vert</button>
+            <button onclick="changeColor('red');">Rouge</button>
+            <button onclick="changeColor('yellow');">Jaune</button>
         </div>
-        <div class="input-group">
-          <label for="password">Mot de passe</label>
-          <input id="password" name="password" type="password" />
-        </div>
-        <div class="input-group">
-          <label for="comfirm-password">Confirmation du mot de passe</label>
-          <input id="comfirm-password" name="password" type="password" />
-        </div>
-        <button type="submit">Créer mon compte</button>
-      </form>
+
     </main>
     <script src="main.js"></script>
-  </body>
+</body>
+
 </html>
